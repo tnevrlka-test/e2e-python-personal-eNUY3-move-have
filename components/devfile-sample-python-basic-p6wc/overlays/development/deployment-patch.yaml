@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-p6wc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-omvz-tenant/e2e-python-personal/devfile-sample-python-basic-p6wc@sha256:c9779bdcd8658a5937703f5e2e14205607ed13748cc5496d151b36e507753724
+        name: my-python
+        resources: {}
+status: {}
